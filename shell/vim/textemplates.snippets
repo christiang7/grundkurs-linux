@@ -1,0 +1,63 @@
+snippet art "Article" b
+\documentclass[halfparskip,12pt]{scrartcl}
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}	
+\usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+\usepackage{scrlayer-scrpage}
+\usepackage{graphicx,xcolor,setspace}
+\usepackage{amsmath,amsfonts,amssymb,textcomp,units}
+\usepackage{textcomp,gensymb,mathtools,array,mhchem}
+\usepackage{multicol,multirow}
+\usepackage{longtable,booktabs}
+\usepackage{pdfpages}
+\usepackage[top=2cm,bottom=2.5cm]{geometry}
+\usepackage{arydshln}
+\usepackage{hyperref}
+\pagestyle{scrheadings}
+
+\begin{document}
+${1}
+\end{document}
+$0
+endsnippet
+
+snippet rep "Report" b
+\documentclass[halfparskip,12pt]{scrreprt}
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+\usepackage{scrlayer-scrpage}
+\usepackage{graphicx,xcolor,setspace}
+\usepackage{amsmath,amsfonts,amssymb,textcomp,units}
+\usepackage{textcomp,gensymb,mathtools,array,mhchem}
+\usepackage{multicol,multirow}
+\usepackage{longtable,booktabs}
+\usepackage{pdfpages}
+\setcounter{secnumdepth}{-1}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+\renewcommand{\theequation}{\arabic{equation}}
+%\usepackage[top=2.5cm,bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{arydshln}
+\usepackage[Conny]{fncychap} % Conny Lenny Sonny Glenn Rejne Bjarne
+\usepackage{hyperref}
+\pagestyle{scrheadings}
+
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@} {-0ex \@plus -0ex
+	\@minus -.0ex}{2.3ex \@plus.2ex}{\centering\Large\scshape}}
+\renewcommand\subsection{\@startsection {subsection}{1}{\z@} {-3.25ex \@plus
+	-1ex \@minus -.2ex}{1.5ex \@plus.2ex} {\centering\large\scshape}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{1}{\z@}{-0.0ex
+	\@plus -0ex \@minus -.0ex}{1.0ex \@plus.2ex}{\centering\scshape}}
+\makeatother
+
+\begin{document}
+${1}
+\end{document}
+$0
+endsnippet
+
+

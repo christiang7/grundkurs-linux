@@ -4,22 +4,27 @@
 Grundkurs Linux
 ===============
 
+
 .. only:: html
 
     Linux ist ein freies Betriebsystem und entspricht dem Open-Source-Grundgedanken:
 
-    * Das System und alle verfügbaren Programme sind zum einen ohne Einschränkung
-      kostenlos nutzbar.
-    * Auch der Quellcode des Systems bzw. der Programme kann frei heruntergeladen
-      und nach Belieben abgeändert werden.
+    * Das System und alle verfügbaren Programme sind für den privaten Gebrauch
+      ohne Einschränkung kostenlos nutzbar; für eine kommerzielle Nutzung müssen
+      gegebenenfalls :ref:`Lizenz <Lizenz>` -Bedingungen beachtet werden.
+    * Auch der Quellcode des Systems und der einzelnen Programme kann frei
+      heruntergeladen werden. So kann man den Aufbau und die Funktionsweise
+      einzelner Programme verstehen lernen, prüfen, oder auch den eigenen
+      Bedürfnissen angepassen.
 
-    Dank der Sicherheit, Stabilität und Transparenz ist Linux das wohl
-    beliebteste und am meisten verbreitete Betriebsystem für Großrechner, Router
-    und Webserver. Mit vorkonfigurierten Varianten wie `Linux Mint
-    <http://www.linuxmint.org>`_ sind auch "normale" Aufgaben wie das Benutzen
-    von Office-Programmen, das Verwalten von Emails, das Abspielen von Musik-
-    und Videodateien, usw. auch unter Linux komfortabel und ohne
-    Programmierkenntnisse leicht umsetzbar.
+    Dank der Stabilität und Transparenz ist Linux das am weitesten verbreitete
+    Betriebsystem für Großrechner, Router und Webserver. Mit vorkonfigurierten
+    Varianten wie `Ubuntu <https://wiki.ubuntuusers.de>`_ lassen sich auch
+    "normale" Aufgaben wie das Benutzen von Office-Programmen, das Verwalten von
+    Emails, das Abspielen von Musik- und Videodateien, usw. komfortabel und ohne
+    Vorkenntnisse leicht umsetzen.
+
+.. only:: html
 
     .. sidebar:: Hinweis
 
@@ -27,30 +32,24 @@ Grundkurs Linux
         <https://www.github.com/grund-wissen/grundkurs-linux>`_ heruntergeladen
         werden.
 
-        Druckversion: :download:`(PDF)Dokument <grundkurs-linux.pdf>`
+        Offline-Version:
+
+        :download:`(PDF) Grundkurs Linux
+        <../../build/linux/latex/grundkurs-linux.pdf>`
 
 
 .. toctree::
     :maxdepth: 2
 
     einleitung.rst
-    neu-installation.rst
-    zusatzpakete-installieren.rst
-    verzeichnisse.rst
+    installation.rst
+    linux-dateisystem.rst
+    gui-programme/index.rst
     shell/index.rst
-    tmux.rst
-    vim/index.rst
-    sphinx/index.rst
-    git.rst
-    ssh-und-gpg.rst
-    mutt.rst
-    tools/index.rst
+    datensicherung/index.rst
+    netzwerk/index.rst
+    server/index.rst
     links-und-quellen.rst
-
-.. toctree::
-    :hidden:
-
-    verschluesselung.rst
 
 
 

@@ -2,7 +2,7 @@
 Grundkurs Linux
 ===============
 
-In dieser Dokumentation aus der `Grund-Wissen <http://www.grund-wissen.de>`_
+In dieser Dokumentation aus der `Grund-Wissen <https://www.grund-wissen.de>`_
 -Reihe geht es um Linux, Open Source, Shell-Anweisungen, Shell-Scripting, den
 Text-Editor Vim, und weitere damit zusammen hängende Themen.
 
@@ -12,7 +12,7 @@ ausgebaut, Unterstützung bei der Weiterentwicklung ist gerne willkommen.
 
 Eine HTML-Version dieser Seite ist unter folgender Adresse abrufbar:
 
-http://www.grund-wissen.de/linux
+https://www.grund-wissen.de/linux
 
 
 Lokale Kopien und eigene Änderungen
@@ -24,9 +24,9 @@ folgendermaßen installiert werden:
 
 .. code-block:: bash
 
-    aptitude install python3-setuptools
+    aptitude install python3-pip
 
-	easy_install3 -U Sphinx
+	pip3 install -U Sphinx
 
 Anschließend kann das Repository heruntergeladen werden:
 
@@ -45,8 +45,14 @@ oder ein PDF-Dokument erstellt werden:
     # PDF-Dokument erzeugen:
     make latexpdf
 
-Die fertigen Dokumente befinden sich anschließend im Verzeichnis ``_build/html``
-beziehungsweise ``_build/latex``.
+**Update:** Seit Anfang 2018 bin ich auf separate Verzeichnisse für den
+Source-Code und die Builds umgestiegen -- das erleichtert die Synchronisation,
+und hat zusätzlich den Vorteil, man kann einem lokalen Apache-Webserver einfach
+Lese-Rechte für dieses Build-Verzeichnis einräumen kann.
+
+Befindet sich der Source-Code beispielsweise im Verzeichnis ``~/source/linux``,
+so werden die HTML- beziehungsweise LaTeX-Builds damit in den Verzeichnissen
+``~/build/linux/html`` beziehungsweise ``~/build/linux/latex`` abgelegt.
 
 Sollen eigene, lokale Änderungen an der Dokumentation in dieses Repository
 übernommen werden, so wird um einen entsprechenden Pull-Request gebeten.

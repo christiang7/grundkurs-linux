@@ -1,7 +1,9 @@
+.. _Syntax:
 .. _Shell-Syntax:
+.. _Syntax-Regeln:
 
-Syntax
-======
+Syntax-Regeln
+=============
 
 Die Shell ist ein vielfältiger Interpreter, um (beliebige) Programme zu starten
 und deren Rückgabewerte anzuzeigen bzw. weiter zu verarbeiten.
@@ -10,7 +12,7 @@ In vielen Fällen müssen einem Programm weitere Informationen übergeben werden
 damit es seine Aufgabe in gewünschter Weise erfüllen kann. Es gibt dabei zwei
 Arten von Informationen, die man Programmen mitteilen kann: Optionen und
 Argumente. Dabei werden die Optionen immer vor den Argumenten angegeben, so dass
-die grundlegende Syntax aller Linux-Kommandos folgende Form hat:
+die grundlegende Syntax aller Linux-Anweisunge folgende Form hat:
 
 ..  Benutzer: user@linux$
 
@@ -22,15 +24,18 @@ Die eckigen Klammern sollen andeuten, dass Optionen und Argumente nicht bei
 jedem Programmaufruf notwendig sind. Ihre Angabe hängt vom Zweck des
 Programmaufrufs und den möglichen Parametern eines Programms ab.
 
+.. _Shell-Optionen:
+.. _Optionen:
+
 .. rubric:: Optionen
 
-Optionen können das Verhalten eines Kommandos beeinflussen. Jede Option wird
+Optionen können das Verhalten einer Anweisung beeinflussen. Jede Option wird
 gewöhnlich durch einen einzelnen Buchstaben bezeichnet und beginnt mit einem
 vorangestellten Minus (``-``).
 
 *Beispiel:*
 
-* Das Kommando ``ls`` zeigt den Inhalt eines Verzeichnisses an, indem es die
+* Die Anweisung ``ls`` zeigt den Inhalt eines Verzeichnisses an, indem es die
   Namen der enthaltenen Unterverzeichnisse und Dateien auflistet. Will man
   allerdings nicht einfach nur die Namen der Dateien wissen, sondern auch
   Zusatzinformationen über Dateigröße, Erstellungsdatum oder ähnliches
@@ -60,10 +65,14 @@ Aufruf mit dieser Option die jeweilige Versionsnummer aus.
 Eine Übersicht möglicher Optionen eines Befehls gibt die  Manpage des jeweiligen
 Programms (``man programm``).
 
+.. _Argumente:
+.. _Kommandozeilen-Argument:
+.. _Kommandozeilen-Argumente:
+
 .. rubric:: Argumente
 
-Argumente dienen nicht zur Steuerung eines Kommandos, sondern liefern diesem
-Informationen, die es zu bearbeiten hat. Viele Kommandos zur Manipulation von
+Argumente dienen nicht zur Steuerung einer Anweisung, sondern liefern diesem
+Informationen, die es zu bearbeiten hat. Viele Anweisungen zur Manipulation von
 Dateien benötigen zum Beispiel die Namen der Dateien, die sie manipulieren
 sollen. Hier wird also nicht das Verhalten des Programmes geändert, sondern die
 Information variiert, die dem Programm für seine Arbeit zur Verfügung steht. Im

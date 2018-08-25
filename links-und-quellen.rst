@@ -1,3 +1,5 @@
+.. -*- coding: utf-8 -*-
+
 .. _Linux-Links:
 
 Links
@@ -5,18 +7,26 @@ Links
 
 .. rubric:: Linux-Distributionen
 
-* `Linux Mint (en.) <http://linuxmint.org/>`_
-* `Linuxmuster: Serverlösung für Schulnetzwerke (de.) <http://www.linuxmuster.net/wiki/>`_
+* `Linux Mint (en) <https://linuxmint.com/>`__
+* `Leitfaden für die Installation von Linux Mint (de)
+  <http://linuxmint-installation-guide.readthedocs.io/de/latest/index.html>`__
 
 .. rubric:: Linux (allgemein)
 
-* `Das Ubuntuusers-Wiki (de.) <http://wiki.ubuntuusers.de/Startseite>`_
+* `Das Ubuntuusers-Wiki (de.) <https://wiki.ubuntuusers.de/Startseite>`_
 * `Das Linux-Kompendium (de, Wikibook) <https://de.wikibooks.org/wiki/Linux-Kompendium>`_
 * `Die Selflinux-Dokumentation zu GNU/Linux (de.) <http://www.selflinux.org/selflinux/index.html>`_
 * `Das Linuxwiki (de.) <http://www.linuxwiki.de/LinuxKnowledgeBase>`_
 * `Anleitung zum Absichern von Debian (de.) <https://www.debian.org/doc/manuals/securing-debian-howto/index.de.html>`_
 * `Linux Online Book Collection (en.) <http://www.linuxtopia.org/online_books/index.html>`_
+* `Debian-Anwender-Handbuch <http://debiananwenderhandbuch.de>`_
 
+* `Introduction to Linux <http://www.linuxtopia.org/online_books/introduction_to_linux/book1.htm>`__
+
+.. rubric:: Open Source Tools
+
+* `Sourceforge <http://sourceforge.net/directory/os:linux>`__
+* `GIMP Anleitung (PDF) <http://www.chem.uni-potsdam.de/groups/pools/Anleitungen/gimp.pdf>`__
 
 .. _Linux-Shell-Links:
 
@@ -24,12 +34,14 @@ Links
 
 Deutschsprachig:
 
-* `Shell-Infos und Befehlsübersicht (de.) <http://wiki.ubuntuusers.de/Shell/>`_
+* `Shell-Infos (UbuntuUsers-Wiki, de.) <https://wiki.ubuntuusers.de/Shell/>`__
+* `Shell-Befehlsübersicht (UbuntuUsers-Wiki, de) <https://wiki.ubuntuusers.de/Shell/Befehlsübersicht/>`__
 * `Shellprogrammierungs-Tutorial (de.) <http://www.selflinux.org/selflinux/html/shellprogrammierung.html>`_
 * `Shell-Programmierung (de., Openbook) <http://openbook.rheinwerk-verlag.de/shell_programmierung/>`_
 * `Shell-Programmierung (en.) <http://linuxint.com/DOCS/Linux_Docs/openbook_shell/index.htm>`_
 * `Tips und Tricks zur Shell (de.) <http://www.thomas-guettler.de/vortraege/tipps/tipps-und-tricks.html>`_
 * `Advanced Shell Scripting Guide (en.) <http://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/index.html>`_
+* `Commandline-Fu Shell Tips Collection <http://www.commandlinefu.com/commands/browse>`_
 
 Englischsprachig:
 
@@ -44,15 +56,13 @@ Manuals:
 * `GAWK Programming (PDF, en.) <https://www.gnu.org/software/gawk/manual/gawk.pdf>`_
 * `GNU Make Manual (PDF, en.) <https://www.gnu.org/software/make/manual/make.pdf>`_
 
+.. rubric:: Linux-Server
+
+
+* `Das Debian-Administrationshandbuch (de) <https://debian-handbook.info/browse/de-DE/stable/>`__
+
 ..  commandline-cheatsheet | http://www.computerworld.com/s/article/9030259/Linux_Command_Line_Cheat_Sheet
 ..  useful commands | http://www.howtoforge.com/useful_linux_commands
-
-.. only:: html
-
-    .. rubric:: Open Source Tools
-
-    * `Sourceforge <http://sourceforge.net/directory/os:linux>`_
-
 
 .. _Quellen:
 
@@ -80,9 +90,8 @@ zusätzlich wurden die Manpages der einzelnen Programme genutzt.
 .. [Schaten2005] Ronald Schaten: `Shell-Programmierung
     <http://www.schatenseite.de/>`_. Online-Skript (Creative Commons License), 2005.
 .. [Wolf2005] Juergen Wolf: `Shell Programmierung
-    <http://openbook.galileocomputing.de/shell_programmierung/index.htm>`_.
+    <http://openbook.rheinwerk-verlag.de/shell_programmierung/index.htm>`_.
     GalileoPress, Bonn, 2005.
 
 ..  http://openbook.galileocomputing.de/linux_unix_programmierung/
-
 

@@ -10,13 +10,14 @@ Einleitung
 
     * Das System und alle verfügbaren Programme sind zum einen ohne Einschränkung
       kostenlos nutzbar.
-    * Auch der Quellcode des Systems bzw. der Programme kann frei heruntergeladen
-      und nach Belieben abgeändert werden.
+    * Auch der Quellcode des Systems beziehungsweise der Programme kann frei
+      heruntergeladen und nach Belieben abgeändert werden.
 
     Dank der Sicherheit, Stabilität und Transparenz ist Linux das wohl
     beliebteste und am meisten verbreitete Betriebsystem für Großrechner, Router
-    und Webserver. Mit vorkonfigurierten Varianten wie `Linux Mint
-    <http://www.linuxmint.org>`_ sind auch "normale" Aufgaben wie das Benutzen
+    und Webserver. Mit vorkonfigurierten Varianten wie `Ubuntu
+    <https://wiki.ubuntuusers.de/Startseite/>`__ oder `Linux Mint
+    <http://www.linuxmint.org>`__ sind auch "normale" Aufgaben wie das Benutzen
     von Office-Programmen, das Verwalten von Emails, das Abspielen von Musik-
     und Videodateien, usw. auch unter Linux komfortabel und ohne
     Programmierkenntnisse leicht umsetzbar.
@@ -41,23 +42,24 @@ Einleitung
 
 Open Source kann als ein gemeinschaftliches Prinzip der Zusammenarbeit
 verstanden werden -- es ist daher auch nicht an ein spezielles Betriebsystem
-gebunden. Zahlreiche Programme, beispielsweise `Firefox
+gebunden. Zahlreiche Open-Source Programme wie beispielsweise `Firefox
 <https://de.wikipedia.org/wiki/Firefox>`_, `Thunderbird
-<https://de.wikipedia.org/wiki/Thunderbird>`_, `Open Office
-<https://de.wikipedia.org/wiki/OpenOffice>`_, `VLC
+<https://de.wikipedia.org/wiki/Thunderbird>`_, `LibreOffice
+<https://de.wikipedia.org/wiki/Libreoffice>`_, `VLC
 <https://de.wikipedia.org/wiki/VLC_media_player>`_, `Gimp
 <https://de.wikipedia.org/wiki/Gimp>`_ , und `Inkscape
 <https://de.wikipedia.org/wiki/Inkscape>`_, sind inzwischen auf vielen
-Betriebsystemen weit verbreitet. [#H1]_ Am bekanntesten wurde die
+Betriebsystemen anzufinden. [#H1]_ Am bekanntesten wurde die
 Open-Source-Mentalität allerdings durch `Linux
 <https://de.wikipedia.org/wiki/Linux>`_, welches vollständig auf freier Software
 aufbaut.
 
 Jeder darf sich freie Software und Betriebsysteme kostenlos herunterladen,
-benutzen und modifizieren. Eine Übersicht über zahlreiche Open-Source-Programme
-bietet -- unabhängig vom Betriebsystem -- beispielsweise `Sourceforge
-<http://sourceforge.net>`_. Eine Übersicht über Linux-Software bietet
-beispielsweise das `Ubuntuusers-Wiki <http://wiki.ubuntuusers.de/Software>`_.
+benutzen und (je nach :ref:`Lizenz <Lizenz>`) auch modifizieren. Eine Übersicht
+über zahlreiche Open-Source-Programme bietet -- unabhängig vom Betriebsystem --
+beispielsweise `Sourceforge <https://sourceforge.net>`_. Eine Übersicht über
+Linux-Software bietet beispielsweise das `Ubuntuusers-Wiki
+<https://wiki.ubuntuusers.de/Software>`_.
 
 
 .. index:: Copyleft
@@ -88,6 +90,7 @@ Um nun derartigen Patentierungen von Informationen und den daraus resultierenden
 technischen und rechtlichen Problemen entgegenzuwirken, wurden unter anderem die
 "Open-Source"-Bewegung und die "Free Software Foundation" ins Leben gerufen und
 mit der Entwicklung gemeinschaftlicher, frei verfügbarer Software begonnen.
+[#FO]_
 
 .. only:: html
 
@@ -102,6 +105,7 @@ mit der Entwicklung gemeinschaftlicher, frei verfügbarer Software begonnen.
         :download:`SVG: Open-Source-Logo <pics/open-source.svg>`
 
 .. index:: GNU
+.. _GNU:
 
 In den 1970er und 1980er Jahren entstand so das zahlreiche freie Software
 umfassende `GNU-Projekt <https://de.wikipedia.org/wiki/GNU>`_, das sogar eine
@@ -123,17 +127,72 @@ den 1990er Jahren die Basis für das neue Betriebsystem "Linux" dar. [#AQ]_
         :download:`SVG: Tux <pics/tux.svg>`
 
 
+.. index:: Lizenzen, Free Speech, Free Bear
+.. _Lizenz:
+.. _Lizenzen:
+.. _Free Beer:
+.. _Free Speech:
+.. _Free Speech und Free Beer:
+.. _Free Speech and Free Beer:
+
+.. rubric:: "Free Speech" und "Free Beer"
+
+Bei Open-Source-Software darf stets der Quellcode frei eingesehen werden; man
+kann derartige Software somit stets gratis herunterladen, installieren, und als
+Privatanwender ohne weitere Einschränkungen komplett legal nutzen. 
+
+.. https://dejure.org/gesetze/UrhG/69a.html
+
+"Freiheit" ist allerdings ein schwer festzulegender Begriff; es gibt
+beispielsweise große Unterschiede zwischen einer Rede-Freiheit (Free Speech) und
+Freibier (Free Beer). Überträgt man diesen Vergleich auf Open-Source-Software,
+so kann man sagen, dass für sämtliche Open-Source-Software stets das erstere
+Prinzip gilt: Der Quellcode ist stets frei zugänglich, man kann also jederzeit
+"sehen", wie die jeweiligen Programme funktionieren, und sie folglich auch
+legal herunterladen und installieren.
+
+Auf die einzelnen Lizenzen achten muss man hingegen, wenn der Quellcode von
+einzelnen Programmen modifiziert beziehungsweise um zusätzliche Funktionalitäten
+erweitert werden soll. Der Quellcode "gehört" einem nämlich nicht (im Sinne von
+"Free Beer"), so dass man diesen beispielsweise nicht einfach Code hinzufügen
+und das Resultat dann als eigenes Programm (womöglich sogar ohne
+Veröffentlichung des modifizierten Quellcodes) auf einem Webserver kommerziell
+einsetzen oder gar verkaufen darf.
+
+Die wichtigsten Open-Source-Lizenzen sind folgende:
+
+* Unter einer `GPL <https://de.wikipedia.org/wiki/Gpl#GPL_Version_3>`__-Lizenz
+  stehende Programme dürfen jederzeit (auch kommerziell) frei genutzt werden;
+  Änderungen am Quellcode müssen allerdings ebenfalls wieder unter einer
+  GPL-Lizenz stehen (Copyleft-Prinzip). GPL-Code darf zudem nicht in andere,
+  propietäre Software eingebaut werden.
+
+* Unter einer `LGPL <https://de.wikipedia.org/wiki/LGPL>`__ beziehungsweise
+  `Apache <https://de.wikipedia.org/wiki/Apache-Lizenz>`__-Lizenz stehende
+  Programme dürfen ebenfalls frei genutzt werden; Änderungen und Erweiterungen
+  dürfen allerdings auch unter anderen Lizenzen stehen. Diese Lizenzen weichen
+  somit das Copyleft-Prinzip auf und erlauben auch propietäre Erweiterungen (bei
+  denen die Nutzer dann wiederum auf die jeweiligen Lizenz-Texte achten müssen).
+
+* Bei Werken, die unter einer `Creative-Commons
+  <https://de.wikipedia.org/wiki/Creative_Commons>`__-Lizenz (CCL) stehen
+  (oftmals Bücher, Texte, Bilder, usw.), gibt es verschiedene "Freiheitsgrade",
+  die der Urheber des Werks selbst festlegen kann. Wird beispielsweise der
+  Zusatz "nd" (No Derivatives") verwendet, so darf das Werk zwar genutzt, aber
+  nicht modifiziert werden; wird andererseitst der Zusatz "nc" (Non-Commercial)
+  verwendet, so wird eine kommerzielle Nutzung untersagt.
+
 
 .. _Nutzen, Verstehen, Mitmachen:
 
 .. rubric:: Nutzen, Verstehen, Mitmachen!
 
 Die Linux- und Open-Source-Gemeinschaft lädt nicht nur dazu ein, eine Vielzahl
-an frei verfügbaren Programmen kostenlos herunterzuladen und zu nutzen -- sie
-ist gleichzeitig darum bemüht, den Nutzern die Vorteile von
-Open-Source-Projekten sowie die Funktionsweise von Software verständlich zu
-machen. In einem Team, in dem ein jeder von der Arbeit aller anderen profitiert,
-sind weitere "Kollegen" schließlich jederzeit willkommen.. :-)
+an Programmen frei herunterzuladen und zu nutzen -- sie ist gleichzeitig darum
+bemüht, den Nutzern die Vorteile von Open-Source-Projekten sowie die
+Funktionsweise von Software verständlich zu machen. In einem Team, in dem ein
+jeder von der Arbeit aller anderen profitiert, sind weitere "Kollegen"
+schließlich jederzeit willkommen.. :-)
 
 Mit Linux als Betriebsystem hat jeder Nutzer die Möglichkeit, sich den Quellcode
 von anderen Programmierern anzuschauen und -- durch Lesen und eigenes
@@ -160,8 +219,11 @@ zum frei abrufbaren Wissensschatz und somit zum Gemeinwohl der Gesellschaft bei!
     einer quellfreien Veröffentlichung des "Netscape Navigator" -- dem Vorläufer
     von Mozilla Firefox -- und zu einem Umdenken in der Industrie geführt hat.
 
+.. [#FO] Diese beide Initiativen werden bisweilen mit dem Begriff "FOSS"
+    (Free and Open Source Software) zusammengefasst.
+
 .. [#AQ] Die wohl wichtigsten Prinzipien sind in einem `Aufsatz von Chistian
-    Imhorst <http://texte.datenteiler.de/anarchie-und-quellcode-2>`_
+    Imhorst <https://texte.datenteiler.de/anarchie-und-quellcode-2>`_
     zusammengefasst:
 
     .. pull-quote::
@@ -195,11 +257,12 @@ zum frei abrufbaren Wissensschatz und somit zum Gemeinwohl der Gesellschaft bei!
 
         -- Christian Imhorst
 
-    Quellcode sollte nach dieser Ethik geteilt, d.h. ohne Hindernisse
+    Quellcode sollte nach dieser Ethik geteilt, also ohne Hindernisse
     ausgetauscht und für jeden frei zugänglich gemacht werden. So wurden
-    ähnliche Lizenzen auch für Bücher und Musik geschaffen. Das berühmteste
-    Beispiel ist `Wikipedia
-    <https://de.wikipedia.org/wiki/Wikipedia:Hauptseite>`_.
+    ähnliche Lizenzen wie die `Creative Commons Licencse
+    <https://creativecommons.org/licenses/>`__ auch für Bücher und Musik
+    geschaffen -- das berühmteste Projekt mit einer solchen Lizenz ist wohl
+    `Wikipedia <https://de.wikipedia.org/wiki/Wikipedia:Hauptseite>`__.
 
 
 

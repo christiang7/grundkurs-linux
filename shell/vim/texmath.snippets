@@ -1,0 +1,405 @@
+# LaTeX Math Snippets
+
+# GENERAL MATH INPUT
+
+snippet / "Fraction" i
+\frac{${1:${VISUAL:}}}{$2}$0
+endsnippet
+
+snippet * "Times (Cross Multiplication) Sign" w
+\times $0
+endsnippet
+
+snippet . "Cdot (Scalar Multiplication) Sign" i
+\cdot $0
+endsnippet
+
+snippet pm "PlusMinus" w
+\pm $0
+endsnippet
+
+snippet 8 "Infinity Sign" w
+\infty$0
+endsnippet
+
+snippet % "Percent" w
+\%$0
+endsnippet
+
+snippet _ "Math Subscript" i
+_{\mathrm{${1:${VISUAL:}}}}$0
+endsnippet
+
+snippet ^ "Math Superscript" i
+^{${1:${VISUAL:}}}$0
+endsnippet
+
+snippet 2 "Square Root" w
+\sqrt{${1:${VISUAL:}}}$0
+endsnippet
+
+snippet 2n "General Root" w
+\sqrt[$1]{${2}}$0
+endsnippet
+
+# UNITS
+
+snippet un "Math value and unit" w
+\unit[${1:${VISUAL:}}]{$2}$0
+endsnippet
+
+snippet unf "Math value and unit (Inline Fraction)" w
+\unitfrac[${1:${VISUAL:}}]{$2}{$3}$0
+endsnippet
+
+snippet uni "Math unit only" w
+\unit{${1:${VISUAL:}}}$0
+endsnippet
+
+# RELATIONS
+
+snippet = "Equivalent" w
+\equiv $0
+endsnippet
+
+snippet =~ "Approximation" w
+\approx $0
+endsnippet
+
+snippet ~ "Similar to" w
+\sim $0
+endsnippet
+
+snippet ne "Not Equal" w
+\ne $1
+endsnippet
+
+snippet prop "Proportional to"
+\propto $0
+endsnippet
+
+snippet para "Parallel" b
+\parallel $0
+endsnippet
+
+snippet perp "Perpendicular to" b
+\perp $0
+endsnippet
+
+# ANALYSIS
+
+snippet E "Summation" w
+\sum_{$1}^{$2} $0
+endsnippet
+
+snippet I "Integral" w
+\int_{$1}^{$2} $0
+endsnippet
+
+snippet 6 "Partial Sign" w
+\partial $0
+endsnippet
+
+snippet N "Nabla Operator" w
+\nabla $0
+endsnippet
+
+
+
+# STATISTICS
+
+snippet bin "Binomial Coefficient" w
+\binom{$1}{$2}$0
+endsnippet
+
+# MATH ACCENTS
+
+snippet bar "bar" w
+\bar{${1:${VISUAL}}}$0
+endsnippet
+
+snippet "do(t)?" "Dot" rw
+\dot{${1:${VISUAL}}}$0
+endsnippet
+
+snippet "ddo(t)?" "Double Dot" rw
+\ddot{${1:${VISUAL}}}$0
+endsnippet
+
+snippet til "Tilde" w
+\tilde{${1:${VISUAL}}}$0
+endsnippet
+
+# SPACING
+
+snippet ph "Phantom (Invisible Text)" w
+\phantom{1:${VISUAL}}}$0
+endsnippet
+
+snippet ,, "Math Komma" w
+,\, $0
+endsnippet
+snippet ;; "Math Semicolon" w
+;\; $0
+endsnippet
+
+snippet ... "Ldots" w
+\ldots$0
+endsnippet
+
+# BRACES
+
+snippet ( "Completing Normal Braces" w
+(${1:${VISUAL}})$0
+endsnippet
+
+snippet [ "Completing Square Braces" w
+[${1:${VISUAL}}]$0
+endsnippet
+
+snippet { "Completing Curly Braces" w
+\{${1:${VISUAL}}\}$0
+endsnippet
+
+snippet () "Left and Right Brace" i
+\left( ${1:${VISUAL:}} \right)$0
+endsnippet
+
+snippet [] "Left and Right Square Brace" w
+\left[ ${1:${VISUAL:}} \right]$0
+endsnippet
+
+snippet {} "Curly Braces" w
+\\{ ${1:${VISUAL:}} \\}$0
+endsnippet
+
+snippet <> "langle and rangle (Physik)" w
+\langle ${1:${VISUAL:}} \rangle$0
+endsnippet
+
+snippet lb "Left Brace" w
+\lbrace $0
+endsnippet
+snippet rb "Right Brace" w
+\rbrace$0
+endsnippet
+
+snippet lr( "left( right)" w
+\left( ${1:${VISUAL}} \right)
+endsnippet
+
+snippet lr| "left| right|" w
+\left| ${1:${VISUAL}} \right|
+endsnippet
+
+snippet lr{ "left\{ right\}" w
+\left\\{ ${1:${VISUAL}} \right\\}
+endsnippet
+
+snippet lr[ "left[ right]" w
+\left[ ${1:${VISUAL}} \right]
+endsnippet
+
+snippet lrbr "Curly Braces" w
+\lbrace ${1:${VISUAL:}} \rbrace $0
+endsnippet
+
+
+# MATH ENVIRONMENTS
+
+snippet "ca(ses)?" "Cases" rb
+\begin{cases}
+	${1:${VISUAL:}}
+\end{cases}
+$0
+endsnippet
+
+snippet "arr" "Array (Formula Alignment)" rw
+\begin{array}{${1:c|c}}
+	$2
+\end{array}
+endsnippet
+
+snippet "pma(trix)?" "Matrix" rw
+\begin{pmatrix}
+	$1
+\end{pmatrix}
+$0
+endsnippet
+
+snippet "vma(trix)?" "Deterimant" rw
+\begin{vmatrix}
+	$1
+\end{vmatrix}
+$0
+endsnippet
+
+# GREEK SYMBOLS
+
+snippet "a(a|l)" "alpha" rw
+\alpha$0
+endsnippet
+snippet b "beta" w
+\beta$0
+endsnippet
+snippet c "chi" w
+\chi$0
+endsnippet
+snippet d "delta" w
+\delta$0
+endsnippet
+snippet D "Delta" w
+\Delta$0
+endsnippet
+snippet e "varepsilon" w
+\varepsilon$0
+endsnippet
+snippet f "varphi" w
+\varphi$0
+endsnippet
+snippet fi "phi"  w
+\phi$0
+endsnippet
+snippet ff "phi" w
+\phi$0
+endsnippet
+snippet F "varPhi" w
+\varPhi$0
+endsnippet
+snippet FF "Phi" w
+\Phi$0
+endsnippet
+snippet g "gamma" w
+\gamma$0
+endsnippet
+snippet G "Gamma" w
+\Gamma$0
+endsnippet
+snippet h "eta" w
+\eta$0
+endsnippet
+snippet k "kappa" w
+\kappa$0
+endsnippet
+snippet l "lambda" w
+\lambda$0
+endsnippet
+snippet L "Lambda" w
+\Lambda$0
+endsnippet
+snippet m "mu" w
+\mu$0
+endsnippet
+snippet n "nu" w
+\nu$0
+endsnippet
+snippet p "lambda" w
+\pi$0
+endsnippet
+snippet P "lambda" w
+\Pi$0
+endsnippet
+snippet qq "lambda" w
+\theta$0
+endsnippet
+snippet q "vartheta" w
+\vartheta$0
+endsnippet
+snippet Q "varTheta" w
+\varTheta$0
+endsnippet
+snippet QQ "Theta" w
+\Theta$0
+endsnippet
+snippet r "rho" w
+\rho$0
+endsnippet
+snippet rr "varrho" w
+\varrho$0
+endsnippet
+snippet si "sigma" w
+\sigma$0
+endsnippet
+snippet S "Sigma" w
+\Sigma$0
+endsnippet
+snippet t "tau" w
+\tau$0
+endsnippet
+snippet uu "upsilon" w
+\upsilon$0
+endsnippet
+snippet UU "Upsilon" w
+\Upsilon$0
+endsnippet
+snippet v "varsigma" w
+\varsigma$0
+endsnippet
+snippet w "omega" w
+\omega$0
+endsnippet
+snippet W "Omega" w
+\Omega$0
+endsnippet
+snippet x "xi" w
+\xi$0
+endsnippet
+snippet X  "Xi" w
+\Xi$0
+endsnippet
+snippet y "psi" w
+\psi$0
+endsnippet
+snippet Y "VarPsi" w
+\VarPsi$0
+endsnippet
+snippet YY "Psi" w
+\Psi$0
+endsnippet
+snippet z "zeta"
+\zeta$0
+endsnippet
+
+
+# MATH SETS
+
+snippet NN "Menge N" w
+\mathbb{N}$0
+endsnippet
+snippet RR "Menge R" w
+\mathbb{R}$0
+endsnippet
+snippet RR+ "Menge R+" w
+\mathbb{R}^{+}$0
+endsnippet
+snippet CC "Menge C" w
+\mathbb{C}$0
+endsnippet
+snippet ZZ "Menge Z" w
+\mathbb{Z}$0
+endsnippet
+snippet MQ "Menge Q" w
+\mathbb{Q}$0
+endsnippet
+snippet DD "Menge D" w
+\mathbb{D}$0
+endsnippet
+snippet GG "Menge G" w
+\mathbb{G}$0
+endsnippet
+snippet LL "Menge L" w
+\mathbb{L}$0
+endsnippet
+snippet WW "Menge W" w
+\mathbb{W}$0
+endsnippet
+
+snippet bb "Mengenschrift (mathbb)" w
+\mathbb{${1:${VISUAL:}}}$0
+endsnippet
+
+snippet 00 "Leere Menge" w
+\emptyset$0
+endsnippet
+
+

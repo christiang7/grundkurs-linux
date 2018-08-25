@@ -1,0 +1,292 @@
+
+# RestructuredText Snippets
+
+snippet toc "TOC Tree" b
+.. toctree::
+	:maxdepth: 2
+
+	$1
+$0
+endsnippet
+
+snippet ind "Index" b
+.. index:: ${1:${VISUAL:}}
+$0
+endsnippet
+
+snippet lab "Label" b
+.. _${1:${VISUAL:}}:$0
+endsnippet
+
+snippet ref "Reference" w
+:ref:\`${1:${VISUAL:}} <${2:$1}>\` $0
+endsnippet
+
+snippet eqr "Equation Reference" w
+:eq:\`eqn-${1}\` $0
+endsnippet
+
+snippet down "Download link" w
+:download:\`${1:Description} <${2:Path}>\` $0
+endsnippet
+
+snippet ** "Fettgedruckter Text" w
+**${VISUAL:}** $0
+endsnippet
+
+snippet `` "Typewriter-Text (Code)" w
+\`\`${VISUAL}\`\`$0
+endsnippet
+
+snippet - " Horizontal Line" b
+----
+
+$0
+endsnippet
+
+snippet hr "Horizontale Trennlinie (nur HTML)" b
+.. raw:: html
+
+	<hr />
+
+$0
+endsnippet
+
+snippet hrl "Horizontale Trennlinie (nur LaTeX)" b
+.. raw:: latex
+
+	\rule{\linewidth}{0.5pt}
+
+$0
+endsnippet
+
+
+# MATH
+
+priority 50
+
+snippet mi "Inline Math" w
+:math:\`${1:${VISUAL:}}\`$0
+endsnippet
+
+snippet mun "Math value and unit" w
+:math:\`\unit[${1:${VISUAL:}}]{$2}\`$0
+endsnippet
+
+snippet muni "Math unit only" w
+:math:\`\unit{${1}}\`$0
+endsnippet
+
+snippet munf "Math value and unit (Inline Fraction)" w
+:math:\`\unitfrac[${1:${VISUAL:}}]{$2}{$3}\`$0
+endsnippet
+
+snippet ma "Math Paragraph" b
+.. math::
+
+	${1}
+
+$0
+endsnippet
+
+snippet mal "Math Paragraph with Label" b
+.. math::
+	:label: $1
+
+	$0
+endsnippet
+
+snippet ll "Math Label" w
+:label: eqn-${1}
+endsnippet
+
+priority 0
+
+
+# OTHER DIRECTIVES
+
+snippet epi "Epigraph (Quotation Directive)" b
+.. epigraph::
+
+	${1}
+
+$0
+endsnippet
+
+snippet im "Image (stets ohne Bildunterschrift, LaTeX: keine Fließumgebung)" b
+.. image:: ${1}
+	:align: center
+	:width: 50%
+
+$0
+endsnippet
+
+snippet fig "Figure (wahlweise mit Bildunterschrift, LaTeX: Fließumgebung)" b
+.. figure:: ${1:path}
+	:name: fig-${2}
+	:alt:  fig-${3:$2}
+	:align: center
+	:width: 50%
+
+	$4
+
+$0
+endsnippet
+
+snippet figd "Figure mit Bildunterschrift und SVG-Link" b
+.. figure:: ${1:path}
+	:name: fig-${2}
+	:alt:  fig-${3:$2}
+	:align: center
+	:width: 50%
+
+	${4:Description}
+
+	.. only:: html
+
+		:download:\`SVG: <${5:${1/png/svg/}}>\`
+
+$0
+endsnippet
+
+
+snippet sidebar "Sidebar" b
+.. sidebar:: ${1:Title}
+
+	${2:${VISUAL:}}
+
+$0
+endsnippet
+
+snippet hint "Hinweis-Box" b
+.. hint::
+
+	$1
+
+$0
+endsnippet
+
+snippet lt "List Table" b
+.. list-table::
+	:name: tab-${1:tabname}
+	:widths: 50 50 $2
+
+	* - $3
+	  - $4
+
+$0
+endsnippet
+
+snippet oh "Only HTML (Directive)" b
+.. only:: html
+
+	${1}
+
+$0
+endsnippet
+
+snippet ol "Only LaTeX (Directive)" b
+.. only:: latex
+
+	${1}
+
+$0
+endsnippet
+
+snippet rl "Raw  LaTeX (Directive)" b
+.. raw:: latex
+
+	${1}
+
+$0
+endsnippet
+
+snippet rln "Raw LaTeX Newpage" b
+.. raw:: latex
+
+	\newpage
+
+$0
+endsnippet
+
+snippet cc "C Code Block" b
+.. code-block:: c
+
+	${1:${VISUAL:}}
+
+$0
+endsnippet
+
+snippet py "Codeblock Python" b
+.. code-block:: python
+
+	${1:${VISUAL:}}
+$0
+endsnippet
+
+snippet rst "Codeblock RestructuredText " b
+.. code-block:: rst
+
+	${1:${VISUAL:}}
+
+$0
+endsnippet
+
+snippet sh "Codeblock Shell" b
+.. code-block:: sh
+
+	${1:${VISUAL:}}
+
+$0
+endsnippet
+
+snippet tex "Codeblock LaTeX" b
+.. code-block:: tex
+
+	${1:${VISUAL:}}
+
+$0
+endsnippet
+
+snippet vim "Codeblock Vim" b
+.. code-block:: vim
+
+	${1:${VISUAL:}}
+
+$0
+endsnippet
+
+
+snippet "(a|A)nm" "Anmerkungen" rb
+.. raw:: html
+
+	<hr />
+
+.. only:: html
+
+	.. rubric:: Anmerkungen:
+
+.. [#] ${1}
+
+$0
+endsnippet
+
+
+# USUAL TEXT
+
+snippet bei "beispielsweise" rw
+beispielsweise $0
+endsnippet
+
+snippet bez "beziehungsweise" w
+beziehungsweise $0
+endsnippet
+
+snippet fol "folgendermaßen" w
+folgendermaßen $0
+endsnippet
+
+# Extensions
+
+extends texmath
+
