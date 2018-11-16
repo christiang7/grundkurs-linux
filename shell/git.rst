@@ -724,7 +724,7 @@ wiederum in das ``origin``-Repository gepushed werden.
 
 
 * `Git Einführung (de.) <https://directory.apache.org/studio/downloads.html>`__
-* `Git Buch (de.) <https://git-scm.com/book/de/v1/>`__
+* `Git Buch (de.) <https://git-scm.com/book/de/v2>`__
 
 .. .
 

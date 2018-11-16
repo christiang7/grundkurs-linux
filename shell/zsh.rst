@@ -116,6 +116,8 @@ Konfigurationsmöglichkeiten. Eine simple Variante, um diese nutzen zu können,
 bietet das Paket `Oh-my-ZSH <http://ohmyz.sh/>`__. Dieses kann folgendermaßen
 installiert werden kann:
 
+.. https://github.com/robbyrussell/oh-my-zsh/
+
 .. code-block:: sh
 
     curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh

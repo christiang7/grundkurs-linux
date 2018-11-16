@@ -2990,6 +2990,8 @@ Sub-Anweisung aufgerufen werden. Die wichtigsten Sub-Anweisungen sind:
   Ruft man ``pass`` ohne einen eindeutigen Eintrag auf, so werden anstelle des
   Passworts alle in Frage kommenden Einträge aufgelistet.
 
+.. setzt xclip voraus?
+
 * Mit ``pass ls`` oder ``pass list`` werden alle Passwort-Einträge der
   Schlüssel-Sammlung aufgelistet (ohne die zugehörigen Passwörter). Gibt man
   hinter ``pass list`` eine Kategorie an, so werden nur diejenigen Passwörter
@@ -3007,10 +3009,38 @@ Die ``pass``-Anweisungen sind offensichtlich den üblichen Shell-Anweisungen seh
 ähnlich, das Programm ist also sehr intuitiv bedienbar; zudem kann bei der
 Eingabe wie gewohnt eine Tab-Vervollständigung genutzt werden.
 
-Eine sichere und wohl geordnete Passwort-Verwaltung, wie sie ``pass`` bietet,
-sollte meiner Meinung nach für jeden Shell-Anwender zum Standard-Repertoire
-gehören.
+.. Eine sichere und wohl geordnete Passwort-Verwaltung, wie sie ``pass`` bietet,
+.. sollte meiner Meinung nach für jeden Shell-Anwender zum Standard-Repertoire
+.. gehören.
 
+.. Mit ``pass git init`` kann aus dem Password-Store ein git-Repository gemacht
+.. werden. Jede Änderung am Storage wird dann automatisch als Commit
+.. gespeichert.
+
+.. You can create a remote repository for your password store on another machine
+.. like so:
+
+.. $ cd /path/to/password_store
+.. $ git init --bare
+
+.. And now you can add this repository as the remote repo on your initial machine
+.. with pass set up and set it as the upstream branch:
+
+.. $ git remote add origin [email protected]:/path/to/password_store.git
+.. $ git push -u origin master
+
+.. And now you can synchronize changes to your password store via the standard git
+.. commands! (e.g., clone, push, pull, etc.)
+
+.. On machines where pass is installed you can invoke “pass git <command>” to
+.. execute the git command for your password store.
+
+.. https://www.passwordstore.org/
+
+.. you can export your GPG keys in ASCII-armored form 
+
+.. $ gpg --output mygpgkey_pub.gpg --armor --export ABCD1234
+.. $ gpg --output mygpgkey_sec.gpg --armor --export-secret-key ABCD1234
 
 .. index:: tee
 .. _tee:

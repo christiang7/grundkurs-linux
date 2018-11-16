@@ -196,3 +196,9 @@ gehörenden Webspace kopiert werden.
 ..     gle-groups-without-google-account/>`__ mit jeder Googlegroup.
 
 
+.. Anker-Zeichen in Überschriften entfernen:
+
+.. .. code-block:: sh
+
+..     find ./ -iname "*.html" | xargs sed -i "s/¶//g"
+
